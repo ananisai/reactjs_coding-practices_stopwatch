@@ -1,0 +1,123 @@
+/* Write CSS here */
+.app_container {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/stopwatch-sm-bg.png');
+  background-size: cover;
+  height: 100vh;
+}
+
+@media screen and (min-width: 768px) {
+  .app_container {
+    background-image: url('https://assets.ccbp.in/frontend/react-js/stopwatch-lg-bg.png');
+    max-height: 100vh;
+  }
+}
+
+.stopwatch_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 65px;
+}
+
+@media screen and (min-width: 992px) {
+  .stopwatch_container {
+    align-items: flex-start;
+    margin-left: 155px;
+  }
+}
+
+.stopwatch {
+  color: #333333;
+  font-family: 'Roboto';
+  font-size: 35px;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 992px) {
+  .stopwatch {
+    font-size: 65px;
+  }
+}
+
+.timer_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 310px;
+  border-radius: 12px;
+  padding: 32px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 40px rgba(23, 31, 70, 0.16);
+}
+
+.timer {
+  display: flex;
+  align-items: center;
+}
+
+.timer_image {
+  margin-right: 9px;
+}
+
+.heading {
+  color: #333333;
+  font-size: 24px;
+  font-weight: 500;
+  font-family: 'Roboto';
+}
+
+.stopwatch_timer {
+  color: #333333;
+  font-family: 'Roboto';
+  margin-top: 0px;
+  font-size: 36px;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 768px) {
+  .stopwatch_timer {
+    font-size: 65px;
+  }
+}
+
+.timer_buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.button {
+  color: #ffffff;
+  font-family: 'Roboto';
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 4px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .button {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+}
+
+.start_button {
+  background-color: #1db05f;
+  margin-right: 25px;
+}
+
+.stop_button {
+  background-color: #ef0d36;
+  margin-right: 25px;
+}
+
+.reset_button {
+  background-color: #eaa800;
+}
